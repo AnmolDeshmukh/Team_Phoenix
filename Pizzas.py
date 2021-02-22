@@ -25,20 +25,20 @@ lst_two = []
 lst_three = []
 lst_four = []
 for i in range(len(lst_1)):
-    if len(lst_1[i:])>=2 & (lst_1[i] & lst_1[i+1] != []) & (sorted(lst_1[i]) != sorted(lst_1[i+1])):
+    if len(lst_1[i])>=2 and (lst_1[i] and lst_1[i+1] != []) and (sorted(lst_1[i]) != sorted(lst_1[i+1])):
         while(len(lst_two)< 2*team_two):
             lst_two.append(lst_1[i])
             lst_two.append(lst_1[i+1])
             break
         break
-    if len(lst_1[i:])>=3 & (lst_1[i] & lst_1[i+1] & lst_1[i+2] != []) & (sorted(lst_1[i]) != sorted(lst_1[i+1]) != sorted(lst_1[i+2])):
+    if len(lst_1[i])>=3 and (lst_1[i] and lst_1[i+1] & lst_1[i+2] != []) and (sorted(lst_1[i]) != sorted(lst_1[i+1]) != sorted(lst_1[i+2])):
         while(len(lst_three)< 3*team_three):
             lst_three.append(lst_1[i])
             lst_three.append(lst_1[i+1])
             lst_three.append(lst_1[i+2])
             break
         break
-    if len(lst_1[i:]) >= 4 & (lst_1[i] & lst_1[i+1] & lst_1[i+2] & lst_1[i+3] != []) & (sorted(lst_1[i]) != sorted(lst_1[i+1]) != sorted(lst_1[i+2]) != sorted(lst_1[i+3])):
+    if len(lst_1[i]) >= 4 and (lst_1[i] and lst_1[i+1] and lst_1[i+2] and lst_1[i+3] != []) and (sorted(lst_1[i]) != sorted(lst_1[i+1]) != sorted(lst_1[i+2]) != sorted(lst_1[i+3])):
         while(len(lst_four)< 4*team_four):
             lst_four.append(lst_1[i])
             lst_four.append(lst_1[i+1])
